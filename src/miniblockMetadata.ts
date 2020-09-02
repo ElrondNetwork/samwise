@@ -53,4 +53,16 @@ export class MiniblockMetadata {
         let hasDestination = this.notarizedAtDestinationInMetaNonce > 0;
         return !hasDestination;
     }
+
+    isRewards() {
+        return this.type == 255;
+    }
+
+    isSCR() {
+        return this.type == 90;
+    }
+
+    hyperblockHash() {
+        return this.notarizedAtDestinationInMetaHash;
+    }
 }

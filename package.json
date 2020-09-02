@@ -12,12 +12,14 @@
   "author": "ElrondNetwork",
   "license": "ISC",
   "dependencies": {
+    "commander": "^6.1.0",
     "level": "^6.0.1",
     "protobufjs": "^6.10.1"
   },
   "devDependencies": {
     "@types/assert": "^1.4.6",
     "@types/chai": "^4.2.11",
+    "@types/commander": "^2.12.2",
     "@types/levelup": "^4.3.0",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.13.2",
