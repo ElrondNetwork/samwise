@@ -16,3 +16,11 @@ export const ProtoToObjectOptions = {
     objects: true,
     oneofs: true
 };
+
+export function onLevelErrorGet(error: any): null {
+    if (error.notFound) {
+        return null;
+    }
+
+    throw error;
+}

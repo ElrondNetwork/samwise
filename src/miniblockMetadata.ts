@@ -48,4 +48,9 @@ export class MiniblockMetadata {
 
         return false;
     }
+
+    hasCriticalIssue(): boolean {
+        let hasDestination = this.notarizedAtDestinationInMetaNonce > 0;
+        return !hasDestination;
+    }
 }

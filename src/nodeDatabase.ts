@@ -4,8 +4,8 @@ const { readdirSync } = require('fs')
 import * as path from "path";
 import { Epoch } from "./epochByHash";
 import { MiniblockMetadata } from "./miniblockMetadata";
-import { EpochDatabase } from "../epochDatabase";
-import { PayloadDbOptions, IndexDbOptions } from "./shared";
+import { EpochDatabase } from "./epochDatabase";
+import { PayloadDbOptions, IndexDbOptions, onLevelErrorGet } from "./shared";
 import { MetaBlock } from "./metaBlock";
 
 export class NodeDatabase {
@@ -63,18 +63,29 @@ export class NodeDatabase {
         await this.epochByHashIndex.close();
         await this.miniblockByTxHashIndex.close();
 
-        this.epochDatabases.forEach(async (db) => {
+        for (const db of this.epochDatabases) {
             await db.close();
-        });
+        }
     }
 
-    async getTxHashes(): Promise<string[]> {
+    async getLookupTxHashes(): Promise<string[]> {
         let result = [];
         let stream = this.miniblockByTxHashIndex.createReadStream({ keys: true, values: false });
 
         for await (const data of stream) {
             let hash: any = data;
             result.push(hash);
+        }
+
+        return result;
+    }
+
+    async getCoreTxHashes(): Promise<string[]> {
+        let result: string[] = [];
+        
+        for (const db of this.epochDatabases) {
+            let hashes = await db.getAnyTxHashes();
+            Array.prototype.push.apply(result, hashes);
         }
 
         return result;
@@ -88,11 +99,7 @@ export class NodeDatabase {
             let metadata = db.getMiniblockMetadata(miniblockHash);
             return metadata;
         } catch (error) {
-            if (error.notFound) {
-                return null;
-            }
-
-            throw error;
+            return onLevelErrorGet(error);
         }
     }
 
