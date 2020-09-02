@@ -21,9 +21,9 @@ export class Transaction {
 
     protected populateFromProtoObject(object: any) {
         this.nonce = object.Nonce;
-        this.sender = object.SndAddr.toString("hex");
-        this.receiver = object.RcvAddr.toString("hex");
-        this.data = object.Data.toString("base64");
+        this.sender = object.SndAddr?.toString("hex");
+        this.receiver = object.RcvAddr?.toString("hex");
+        this.data = object.Data?.toString("base64");
     }
 }
 
@@ -45,7 +45,7 @@ export class RewardTransaction extends Transaction {
 
     protected populateFromProtoObject(object: any) {
         super.populateFromProtoObject(object);
-        this.epoch = object.epoch;
+        this.epoch = object.Epoch;
     }
 }
 

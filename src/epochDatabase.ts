@@ -126,4 +126,30 @@ export class EpochDatabase {
         let result = MetaBlock.fromBuffer(buffer);
         return result;
     }
+
+    async walkOverTransactions(): Promise<void> {
+        let stream = this.transactionsDb.createReadStream({ keys: true, values: true });
+        for await (const data of stream) {
+            let hash: any = data.key;
+            let buffer: Buffer = data.value;
+            let tx = Transaction.fromBuffer(buffer);
+            console.log(hash, tx);
+        }
+
+        stream = this.rewardsDb.createReadStream({ keys: true, values: true });
+        for await (const data of stream) {
+            let hash: any = data.key;
+            let buffer: Buffer = data.value;
+            let tx = RewardTransaction.fromBuffer(buffer);
+            console.log(hash, tx);
+        }
+
+        stream = this.unsignedDb.createReadStream({ keys: true, values: true });
+        for await (const data of stream) {
+            let hash: any = data.key;
+            let buffer: Buffer = data.value;
+            let tx = UnsignedTransaction.fromBuffer(buffer);
+            console.log(hash, tx);
+        }
+    }
 }
