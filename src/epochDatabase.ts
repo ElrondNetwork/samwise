@@ -62,8 +62,8 @@ export class EpochDatabase {
         return normal.concat(unsigned).concat(rewards);
     }
 
-    async findAnyTx(hash: string): Promise<any> {
-        return await this.getTx(hash) || this.getUnsignedTx(hash) || this.getRewardTx(hash);
+    async getAnyTx(hash: string): Promise<any> {
+        return await this.getTx(hash) || await this.getUnsignedTx(hash) || await this.getRewardTx(hash);
     }
 
     async getTx(hash: string): Promise<Transaction | null> {

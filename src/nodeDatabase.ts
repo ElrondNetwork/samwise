@@ -91,6 +91,17 @@ export class NodeDatabase {
         return result;
     }
 
+    async getAnyTx(hash: string): Promise<any> {
+        for (const db of this.epochDatabases) {
+            let tx = await db.getAnyTx(hash);
+            if (tx) {
+                return tx;
+            }
+        }
+
+        return null;
+    }
+
     async getMiniblockMetadataByTx(hash: string): Promise<MiniblockMetadata | null> {
         try {
             let miniblockHash = await this.miniblockByTxHashIndex.get(hash);

@@ -1,26 +1,20 @@
 import { readdirSync } from "fs";
 import path = require("path");
 import { NodeDatabase } from "../nodeDatabase";
+import { setupSharedArguments, getSharedArguments, parseArguments } from "./shared";
 const { Command } = require("commander");
 
 async function main() {
     const program = new Command();
-    program
-        .requiredOption("-w, --workspace <workspace>")
-        .requiredOption("-s, --shards <shards>", "shard assignments", "0,1,2,metachain");
+    setupSharedArguments(program);
+    parseArguments(program);
 
-    try {
-        program.parse(process.argv)
-    } catch (error) {
-        console.error(`Error: ${error.message}`);
-    }
-
-    let workspace = program.workspace;
-    let shardAssignments = program.shards.split(",");
+    let { workspace, shardAssignments } = getSharedArguments(program);
     console.log("Checking workspace:", workspace);
     console.log("Shard assignments:", shardAssignments);
-
+    
     let folders = readdirSync(workspace, { withFileTypes: true }).filter((item: any) => item.isDirectory());
+
     for (const [index, item] of folders.entries()) {
         console.log("Folder:", item.name);
 
@@ -33,7 +27,7 @@ async function main() {
         await nodeDb.open();
 
         try {
-            await checkLinksBetweenTxAndMetaBlock(nodeDb);
+            await doCheck(nodeDb);
         } catch (error) {
             console.error(error);
         }
@@ -42,7 +36,7 @@ async function main() {
     }
 }
 
-async function checkLinksBetweenTxAndMetaBlock(nodeDb: NodeDatabase) {
+async function doCheck(nodeDb: NodeDatabase) {
     let hashes = await nodeDb.getLookupTxHashes();
 
     let rewardsIssues = 0;

@@ -1,4 +1,4 @@
-import { TxMessage, RewardTxMessage } from "./proto";
+import { TxMessage, RewardTxMessage, ScrMessage } from "./proto";
 import { ProtoToObjectOptions } from "./shared";
 
 export class Transaction {
@@ -58,8 +58,8 @@ export class UnsignedTransaction extends Transaction {
 
     static fromBuffer(buffer: Buffer): UnsignedTransaction {
         let result = new UnsignedTransaction();
-        let message: any = RewardTxMessage.decode(buffer);
-        let object = RewardTxMessage.toObject(message, ProtoToObjectOptions);
+        let message: any = ScrMessage.decode(buffer);
+        let object = ScrMessage.toObject(message, ProtoToObjectOptions);
         result.populateFromProtoObject(object);
 
         return result;
