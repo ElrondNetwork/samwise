@@ -10,13 +10,13 @@ import { MetaBlock } from "./metaBlock";
 
 export class NodeDatabase {
     private readonly dbpath: string;
-    private readonly shard: number;
+    private readonly shard: string;
 
     private epochByHashIndex: any;
     private miniblockByTxHashIndex: any;
     private epochDatabases: EpochDatabase[];
 
-    constructor(dbpath: string, shard: number) {
+    constructor(dbpath: string, shard: string) {
         this.dbpath = dbpath;
         this.shard = shard;
         this.epochDatabases = [];

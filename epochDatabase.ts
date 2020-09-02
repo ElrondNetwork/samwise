@@ -7,7 +7,7 @@ import { MetaBlock } from "./src/metaBlock";
 export class EpochDatabase {
     private readonly epoch: number;
     private readonly dbpath: string;
-    private readonly shard: number;
+    private readonly shard: string;
 
     private miniblocksMetadataDb: any;
     private metaBlocksDb: any;
@@ -19,7 +19,7 @@ export class EpochDatabase {
     // Useful for "has()" questions.
     private metaBlocksKeys: string[] = [];
 
-    constructor(epoch: number, dbpath: string, shard: number) {
+    constructor(epoch: number, dbpath: string, shard: string) {
         this.epoch = epoch;
         this.dbpath = dbpath;
         this.shard = shard;

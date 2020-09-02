@@ -1,0 +1,2662 @@
+>> studyNodeDatabase(): shard 0
+inspectExistenceOfHyperblockCoordinates
+total txs 1034
+issues 0
+rewardsIssues 0
+scrIssues 0
+inspectLinkBetweenTxAndMetaBlock
+rewardsIssues 0
+scrIssues 0
+>> studyNodeDatabase(): shard 1
+inspectExistenceOfHyperblockCoordinates
+total txs 2301
+issues 0
+rewardsIssues 0
+scrIssues 0
+inspectLinkBetweenTxAndMetaBlock
+rewardsIssues 0
+scrIssues 0
+>> studyNodeDatabase(): shard 2
+inspectExistenceOfHyperblockCoordinates
+total txs 1270
+issues 0
+rewardsIssues 0
+scrIssues 0
+inspectLinkBetweenTxAndMetaBlock
+rewardsIssues 0
+scrIssues 0
+>> studyNodeDatabase(): shard metachain
+inspectExistenceOfHyperblockCoordinates
+total txs 3545
+issues 0
+rewardsIssues 176
+scrIssues 26
+inspectLinkBetweenTxAndMetaBlock
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '09844767b72157ee2ca4bd909bfddb63f08f7bd790394c1b06de5c47897a4e9e',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12762,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '09844767b72157ee2ca4bd909bfddb63f08f7bd790394c1b06de5c47897a4e9e',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '33804516a2bd1b832e89cbc55ebf5ee3a9c5e2e5a1c25e302dbb632821d73cc2',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12880,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '33804516a2bd1b832e89cbc55ebf5ee3a9c5e2e5a1c25e302dbb632821d73cc2',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e310b4f313790abb76e86c647ec5626a083195e2c3bdbb2fcdb5f242804affaf',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12746,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'e310b4f313790abb76e86c647ec5626a083195e2c3bdbb2fcdb5f242804affaf',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'ec2bf3190be8da8a1e9a15e872d1e1add18514f67a002b35d8d55083070fe424',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12690,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'ec2bf3190be8da8a1e9a15e872d1e1add18514f67a002b35d8d55083070fe424',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '5daed99698612483b547358f5f5d10d46bcc251f11e91fb02884cc5f5d0b7740',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12815,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '5daed99698612483b547358f5f5d10d46bcc251f11e91fb02884cc5f5d0b7740',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '24296ef2adf57b91d7d625ce91d110ce16eebc1d386ebed3992a1fcb86c72208',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12848,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '24296ef2adf57b91d7d625ce91d110ce16eebc1d386ebed3992a1fcb86c72208',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '33804516a2bd1b832e89cbc55ebf5ee3a9c5e2e5a1c25e302dbb632821d73cc2',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12880,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '33804516a2bd1b832e89cbc55ebf5ee3a9c5e2e5a1c25e302dbb632821d73cc2',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '0ca55720b7042a86a362e9d66734add58d70c7fe4234a8d30fdce035a1db531a',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 410130,
+  epoch: 28,
+  type: 90,
+  miniblockHash: '0ca55720b7042a86a362e9d66734add58d70c7fe4234a8d30fdce035a1db531a',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'ca1c1a4e57f9622f61f38c8c9db47e9041e78e7c7658c3f9046ddc9ea9e4c27d',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 287741,
+  epoch: 19,
+  type: 90,
+  miniblockHash: 'ca1c1a4e57f9622f61f38c8c9db47e9041e78e7c7658c3f9046ddc9ea9e4c27d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '5daed99698612483b547358f5f5d10d46bcc251f11e91fb02884cc5f5d0b7740',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12815,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '5daed99698612483b547358f5f5d10d46bcc251f11e91fb02884cc5f5d0b7740',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e310b4f313790abb76e86c647ec5626a083195e2c3bdbb2fcdb5f242804affaf',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12746,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'e310b4f313790abb76e86c647ec5626a083195e2c3bdbb2fcdb5f242804affaf',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '25cd797c5cc6c0c1348c1a0a1a367893e9a02e958de332083b12f419f00dc334',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12705,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '25cd797c5cc6c0c1348c1a0a1a367893e9a02e958de332083b12f419f00dc334',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '25cd797c5cc6c0c1348c1a0a1a367893e9a02e958de332083b12f419f00dc334',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12705,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '25cd797c5cc6c0c1348c1a0a1a367893e9a02e958de332083b12f419f00dc334',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '3f0b94703d6b91c285a31af89558225bdcd0246eab42cebc999d2582341f5c6d',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12835,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '3f0b94703d6b91c285a31af89558225bdcd0246eab42cebc999d2582341f5c6d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '0ca55720b7042a86a362e9d66734add58d70c7fe4234a8d30fdce035a1db531a',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 410130,
+  epoch: 28,
+  type: 90,
+  miniblockHash: '0ca55720b7042a86a362e9d66734add58d70c7fe4234a8d30fdce035a1db531a',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '273ff1b712440de153752c3b38b68afca2192f33da3af089319b0e16b616194c',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12721,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '273ff1b712440de153752c3b38b68afca2192f33da3af089319b0e16b616194c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a5af09df8b038a745cfc31779c517b297ec8859129f521c75134d3f7fc5c0f81',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12651,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'a5af09df8b038a745cfc31779c517b297ec8859129f521c75134d3f7fc5c0f81',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'cd7b8a5ce6e139f6c870c0640556cebb8622eb44ed77828d77e81134b1cef4bf',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12776,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'cd7b8a5ce6e139f6c870c0640556cebb8622eb44ed77828d77e81134b1cef4bf',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'ec2bf3190be8da8a1e9a15e872d1e1add18514f67a002b35d8d55083070fe424',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12690,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'ec2bf3190be8da8a1e9a15e872d1e1add18514f67a002b35d8d55083070fe424',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'cd7b8a5ce6e139f6c870c0640556cebb8622eb44ed77828d77e81134b1cef4bf',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12776,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'cd7b8a5ce6e139f6c870c0640556cebb8622eb44ed77828d77e81134b1cef4bf',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '09844767b72157ee2ca4bd909bfddb63f08f7bd790394c1b06de5c47897a4e9e',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12762,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '09844767b72157ee2ca4bd909bfddb63f08f7bd790394c1b06de5c47897a4e9e',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '273ff1b712440de153752c3b38b68afca2192f33da3af089319b0e16b616194c',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12721,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '273ff1b712440de153752c3b38b68afca2192f33da3af089319b0e16b616194c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 446431,
+  epoch: 31,
+  type: 255,
+  miniblockHash: 'f61ac89e27f2ab4138c57440dd2b72d0adbfc2e61bb69e36476afc523c2d890c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: '44266abd4e0c6bd5ae52f6a77816cb7ef805b03d4785aaf07ce7e8b52aaf582c',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '3f0b94703d6b91c285a31af89558225bdcd0246eab42cebc999d2582341f5c6d',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12835,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '3f0b94703d6b91c285a31af89558225bdcd0246eab42cebc999d2582341f5c6d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 360025,
+  epoch: 25,
+  type: 255,
+  miniblockHash: '018143406df6fede15a06f138d671c8637fb48a73245b3c70aad5cf77b28d689',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a5af09df8b038a745cfc31779c517b297ec8859129f521c75134d3f7fc5c0f81',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12651,
+  epoch: 0,
+  type: 90,
+  miniblockHash: 'a5af09df8b038a745cfc31779c517b297ec8859129f521c75134d3f7fc5c0f81',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '24296ef2adf57b91d7d625ce91d110ce16eebc1d386ebed3992a1fcb86c72208',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 12848,
+  epoch: 0,
+  type: 90,
+  miniblockHash: '24296ef2adf57b91d7d625ce91d110ce16eebc1d386ebed3992a1fcb86c72208',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 86406,
+  epoch: 6,
+  type: 255,
+  miniblockHash: '439673e2423608d2cc0155b3abf1ae43cdb46ced8c55e0b149d52f78759148ed',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  sourceShard: 4294967295,
+  destinationShard: 2,
+  round: 129609,
+  epoch: 9,
+  type: 255,
+  miniblockHash: 'e9fc7798fdfb0a6d92857b6dd94e38fdb7c7cd108d20e46037a5388137552d2d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 259218,
+  epoch: 18,
+  type: 255,
+  miniblockHash: 'a32a45ec928cfadb0770826d64048670e4b245e306be659fb880e6ad46797bac',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'ca1c1a4e57f9622f61f38c8c9db47e9041e78e7c7658c3f9046ddc9ea9e4c27d',
+  sourceShard: 4294967295,
+  destinationShard: 4294967295,
+  round: 287741,
+  epoch: 19,
+  type: 90,
+  miniblockHash: 'ca1c1a4e57f9622f61f38c8c9db47e9041e78e7c7658c3f9046ddc9ea9e4c27d',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+MiniblockMetadata {
+  hash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  sourceShard: 4294967295,
+  destinationShard: 0,
+  round: 172812,
+  epoch: 12,
+  type: 255,
+  miniblockHash: 'f3649717bc547ac212ead809a49e9b90574a9cf05bb69bc8810067f0ea0dd1ca',
+  notarizedAtSourceInMetaNonce: 0,
+  notarizedAtDestinationInMetaNonce: 0,
+  notarizedAtSourceInMetaHash: '',
+  notarizedAtDestinationInMetaHash: ''
+}
+rewardsIssues 176
+scrIssues 26

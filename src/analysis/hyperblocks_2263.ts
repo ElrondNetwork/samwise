@@ -21,8 +21,8 @@ async function main() {
     }
 }
 
-async function studyNodeDatabase(nodePath: string, shard: number) {
-    console.log("studyNodeDatabase():", "shard", shard);
+async function studyNodeDatabase(nodePath: string, shard: string) {
+    console.log(">> studyNodeDatabase():", "shard", shard);
 
     let dbpath = path.join(nodePath, "db", "1")
     let nodeDb = new NodeDatabase(dbpath, shard);
@@ -32,15 +32,6 @@ async function studyNodeDatabase(nodePath: string, shard: number) {
     //await inspectMetablock(nodeDb);
     await inspectExistenceOfHyperblockCoordinates(nodeDb);
     await inspectLinkBetweenTxAndMetaBlock(nodeDb);
-
-    //console.log((await nodeDb.getEpochDb(new Epoch(0)).getRewardsHashes()).length)
-    //console.log((await nodeDb.getEpochDb(new Epoch(1)).getRewardsHashes()).length)
-    //console.log((await nodeDb.getEpochDb(new Epoch(2)).getRewardsHashes()).length)
-    //console.log((await nodeDb.getEpochDb(new Epoch(3)).getRewardsHashes()).length)
-    //console.log((await nodeDb.getEpochDb(new Epoch(4)).getRewardsHashes()).length)
-    //console.log((await nodeDb.getEpochDb(new Epoch(5)).getRewardsHashes()).length)
-    //console.log((await nodeDb.getEpochDb(new Epoch(6)).getRewardsHashes()).length)
-
     await nodeDb.close();
 }
 
@@ -59,38 +50,74 @@ async function inspectMetablock(nodeDb: NodeDatabase) {
 }
 
 async function inspectLinkBetweenTxAndMetaBlock(nodeDb: NodeDatabase) {
+    console.log("inspectLinkBetweenTxAndMetaBlock");
+
     let hashes = await nodeDb.getTxHashes();
+
+    let rewardsIssues = 0;
+    let scrIssues = 0;
 
     for (const hash of hashes) {
         let miniblockMetadata = await nodeDb.getMiniblockMetadataByTx(hash);
+        let isRewards = miniblockMetadata!.type == 255;
+        let isSCR = miniblockMetadata!.type == 90;
+
         let metablockHash = miniblockMetadata!.notarizedAtDestinationInMetaHash;
         let metaBlock = await nodeDb.getMetaBlock(metablockHash);
         if (!metaBlock) {
-            console.log("Bad link");
-            console.log("=================================")
-            console.log(miniblockMetadata);
-            console.log("Miniblock", miniblockMetadata?.hash);
-            console.log("Metablock", metablockHash);
-            console.log("Transaction", hash);
+            if (isRewards) {
+                rewardsIssues++;
+                console.log(miniblockMetadata);
+            } else if (isSCR) {
+                scrIssues++;
+                console.log(miniblockMetadata);
+            } else {
+                console.log("Bad link");
+                console.log("=================================")
+                console.log(miniblockMetadata);
+                console.log("Miniblock", miniblockMetadata?.hash);
+                console.log("Metablock", metablockHash);
+                console.log("Transaction", hash);
+            }
         }
     }
+
+    console.log("rewardsIssues", rewardsIssues);
+    console.log("scrIssues", scrIssues);
 }
 
 async function inspectExistenceOfHyperblockCoordinates(nodeDb: NodeDatabase) {
+    console.log("inspectExistenceOfHyperblockCoordinates");
+
     let hashes = await nodeDb.getTxHashes();
+
+    let rewardsIssues = 0;
+    let scrIssues = 0;
 
     let issues = 0;
     for (const hash of hashes) {
         let metadata = await nodeDb.getMiniblockMetadataByTx(hash);
+        let isRewards = metadata!.type == 255;
+        let isSCR = metadata!.type == 90;
 
         if (metadata!.hasIssues()) {
-            console.log(metadata);
-            issues++;
+            if (isRewards) {
+                rewardsIssues++;
+                console.log(metadata);
+            } else if (isSCR) {
+                scrIssues++;
+            } else {
+                issues++;
+                console.log("Missing hyperblock coordinates:");
+                //console.log(metadata);
+            }
         }
     }
 
     console.log("total txs", hashes.length);
     console.log("issues", issues);
+    console.log("rewardsIssues", rewardsIssues);
+    console.log("scrIssues", scrIssues);
 }
 
 (async () => {
