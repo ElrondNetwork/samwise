@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es6",
+    "outDir": "out",
+    "lib": [
+      "es6"
+    ],
+    "sourceMap": false,
+    "allowJs": false,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "declaration": true
+  },
+  "exclude": [
+    "node_modules",
+    "out"
+  ]
+}

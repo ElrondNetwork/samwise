@@ -1,0 +1,149 @@
+The bug described by Sebi & Adi. Using shardBlock.Nonce() which was incorrect.
+
+studyNodeDatabase(): shard 0
+Bad link
+=================================
+MiniblockMetadata {
+  hash: 'bf6e941cb50b6b6c762e9b78dbbe5bcd81e7b4e608e0751591c92d455d045aed',
+  sourceShard: 1,
+  destinationShard: 0,
+  round: 276564,
+  epoch: 19,
+  type: 0,
+  miniblockHash: 'bf6e941cb50b6b6c762e9b78dbbe5bcd81e7b4e608e0751591c92d455d045aed',
+  notarizedAtSourceInMetaNonce: 275488,
+  notarizedAtDestinationInMetaNonce: 276536,
+  notarizedAtSourceInMetaHash: 'b5e0994d7853b33918fe6d99788dc1b57fbbc8c27b22a788f68322ee4cdd1371',
+  notarizedAtDestinationInMetaHash: '0447c9c2ef159ce34a9eeceed1a9363088aeec5c77cd2d35317972610f04be5e'
+}
+Miniblock bf6e941cb50b6b6c762e9b78dbbe5bcd81e7b4e608e0751591c92d455d045aed
+Metablock 0447c9c2ef159ce34a9eeceed1a9363088aeec5c77cd2d35317972610f04be5e
+Transaction 034ab1e41c0482e47d5f082368e75f12a147ebc4aec92e12d9053b7278d8cf5a
+Bad link
+=================================
+MiniblockMetadata {
+  hash: '29e9833c5f2d995e19b291f79a1539bfa4e8d1ec1ca12c2aed31ae5d7d62f794',
+  sourceShard: 2,
+  destinationShard: 0,
+  round: 456942,
+  epoch: 31,
+  type: 0,
+  miniblockHash: '29e9833c5f2d995e19b291f79a1539bfa4e8d1ec1ca12c2aed31ae5d7d62f794',
+  notarizedAtSourceInMetaNonce: 455338,
+  notarizedAtDestinationInMetaNonce: 456907,
+  notarizedAtSourceInMetaHash: '263966effcf419089b92b71cd13269dc5287b8c3965aac0e4aaf388962bd518e',
+  notarizedAtDestinationInMetaHash: '059ab7177c51cb750b80364b69f0bd5cbb57a4877e2faac95a43534fb2817b25'
+}
+Miniblock 29e9833c5f2d995e19b291f79a1539bfa4e8d1ec1ca12c2aed31ae5d7d62f794
+Metablock 059ab7177c51cb750b80364b69f0bd5cbb57a4877e2faac95a43534fb2817b25
+Transaction 2663f0556a42a896d1b3a7eecefb0278473739341fc5294ab8d2863f583c6a60
+Bad link
+=================================
+MiniblockMetadata {
+  hash: '29e9833c5f2d995e19b291f79a1539bfa4e8d1ec1ca12c2aed31ae5d7d62f794',
+  sourceShard: 2,
+  destinationShard: 0,
+  round: 456942,
+  epoch: 31,
+  type: 0,
+  miniblockHash: '29e9833c5f2d995e19b291f79a1539bfa4e8d1ec1ca12c2aed31ae5d7d62f794',
+  notarizedAtSourceInMetaNonce: 455338,
+  notarizedAtDestinationInMetaNonce: 456907,
+  notarizedAtSourceInMetaHash: '263966effcf419089b92b71cd13269dc5287b8c3965aac0e4aaf388962bd518e',
+  notarizedAtDestinationInMetaHash: '059ab7177c51cb750b80364b69f0bd5cbb57a4877e2faac95a43534fb2817b25'
+}
+Miniblock 29e9833c5f2d995e19b291f79a1539bfa4e8d1ec1ca12c2aed31ae5d7d62f794
+Metablock 059ab7177c51cb750b80364b69f0bd5cbb57a4877e2faac95a43534fb2817b25
+Transaction c56bc10d9833f04a0d0fe4468358a60a7cc5ba09ea9c952d047996ec096ec2f9
+studyNodeDatabase(): shard 1
+Bad link
+=================================
+MiniblockMetadata {
+  hash: 'cb166bff5c930dd75cd8292154fdff85ae06f0e2072679518cb7a9925f59e10f',
+  sourceShard: 1,
+  destinationShard: 1,
+  round: 298647,
+  epoch: 20,
+  type: 0,
+  miniblockHash: 'cb166bff5c930dd75cd8292154fdff85ae06f0e2072679518cb7a9925f59e10f',
+  notarizedAtSourceInMetaNonce: 298598,
+  notarizedAtDestinationInMetaNonce: 298598,
+  notarizedAtSourceInMetaHash: 'e5ff4420cb68ff0a90b1662defe8b28c4f44def730bbbdc8d2d784acfa7dbf72',
+  notarizedAtDestinationInMetaHash: 'e5ff4420cb68ff0a90b1662defe8b28c4f44def730bbbdc8d2d784acfa7dbf72'
+}
+Miniblock cb166bff5c930dd75cd8292154fdff85ae06f0e2072679518cb7a9925f59e10f
+Metablock e5ff4420cb68ff0a90b1662defe8b28c4f44def730bbbdc8d2d784acfa7dbf72
+Transaction e00b1eb965ae2732f4e0990d417bf2fefe78464bee32723e26b49b9565136dc2
+studyNodeDatabase(): shard 2
+Bad link
+=================================
+MiniblockMetadata {
+  hash: 'c8f338a616d51b103cab065304af4c989c7efe5a26bc58316ff244ada5ec40fe',
+  sourceShard: 2,
+  destinationShard: 2,
+  round: 456938,
+  epoch: 31,
+  type: 0,
+  miniblockHash: 'c8f338a616d51b103cab065304af4c989c7efe5a26bc58316ff244ada5ec40fe',
+  notarizedAtSourceInMetaNonce: 456870,
+  notarizedAtDestinationInMetaNonce: 456870,
+  notarizedAtSourceInMetaHash: 'fa673c522f161e33c309556e51b526eaecf9471c06368b11ec3b16808e9bc878',
+  notarizedAtDestinationInMetaHash: 'fa673c522f161e33c309556e51b526eaecf9471c06368b11ec3b16808e9bc878'
+}
+Miniblock c8f338a616d51b103cab065304af4c989c7efe5a26bc58316ff244ada5ec40fe
+Metablock fa673c522f161e33c309556e51b526eaecf9471c06368b11ec3b16808e9bc878
+Transaction 041497ace224fc04cde4c565a2eb3b9502812b7c66e945b14b51521930fceb88
+Bad link
+=================================
+MiniblockMetadata {
+  hash: 'ff89f9e221dab94cdb5ab505fd33456756f0aea5e0c611f00f8b56c6a907716c',
+  sourceShard: 2,
+  destinationShard: 2,
+  round: 456935,
+  epoch: 31,
+  type: 0,
+  miniblockHash: 'ff89f9e221dab94cdb5ab505fd33456756f0aea5e0c611f00f8b56c6a907716c',
+  notarizedAtSourceInMetaNonce: 456867,
+  notarizedAtDestinationInMetaNonce: 456867,
+  notarizedAtSourceInMetaHash: '0a651e39ba29f3e2232bc5a4a947da21bf5156d2763a67b42b5b917e8c6a4078',
+  notarizedAtDestinationInMetaHash: '0a651e39ba29f3e2232bc5a4a947da21bf5156d2763a67b42b5b917e8c6a4078'
+}
+Miniblock ff89f9e221dab94cdb5ab505fd33456756f0aea5e0c611f00f8b56c6a907716c
+Metablock 0a651e39ba29f3e2232bc5a4a947da21bf5156d2763a67b42b5b917e8c6a4078
+Transaction 55a9a73a97afe18e4e2c62b1c41b8c633f606a305bdbaef29c7736d1b34b0748
+Bad link
+=================================
+MiniblockMetadata {
+  hash: '96b343bfac4994711fb28bce6404765e6166e3efde3559299e3c69d8246a862b',
+  sourceShard: 2,
+  destinationShard: 2,
+  round: 456939,
+  epoch: 31,
+  type: 0,
+  miniblockHash: '96b343bfac4994711fb28bce6404765e6166e3efde3559299e3c69d8246a862b',
+  notarizedAtSourceInMetaNonce: 456871,
+  notarizedAtDestinationInMetaNonce: 456871,
+  notarizedAtSourceInMetaHash: '51020fb0be381c460dbe633e2bc81ab62840a7ed6a749ba65165944be3d9010c',
+  notarizedAtDestinationInMetaHash: '51020fb0be381c460dbe633e2bc81ab62840a7ed6a749ba65165944be3d9010c'
+}
+Miniblock 96b343bfac4994711fb28bce6404765e6166e3efde3559299e3c69d8246a862b
+Metablock 51020fb0be381c460dbe633e2bc81ab62840a7ed6a749ba65165944be3d9010c
+Transaction 6f2549f3965abac9876bb6d5f89158ecdce04a628a313be4523c513ea0128456
+Bad link
+=================================
+MiniblockMetadata {
+  hash: 'ff89f9e221dab94cdb5ab505fd33456756f0aea5e0c611f00f8b56c6a907716c',
+  sourceShard: 2,
+  destinationShard: 2,
+  round: 456935,
+  epoch: 31,
+  type: 0,
+  miniblockHash: 'ff89f9e221dab94cdb5ab505fd33456756f0aea5e0c611f00f8b56c6a907716c',
+  notarizedAtSourceInMetaNonce: 456867,
+  notarizedAtDestinationInMetaNonce: 456867,
+  notarizedAtSourceInMetaHash: '0a651e39ba29f3e2232bc5a4a947da21bf5156d2763a67b42b5b917e8c6a4078',
+  notarizedAtDestinationInMetaHash: '0a651e39ba29f3e2232bc5a4a947da21bf5156d2763a67b42b5b917e8c6a4078'
+}
+Miniblock ff89f9e221dab94cdb5ab505fd33456756f0aea5e0c611f00f8b56c6a907716c
+Metablock 0a651e39ba29f3e2232bc5a4a947da21bf5156d2763a67b42b5b917e8c6a4078
+Transaction 7b8111cb424e4b067a911cc5ed293119390d7a3cad4448354f58827ba43df42a

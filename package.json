@@ -1,0 +1,33 @@
+{
+  "name": "samwise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "compile": "tsc -p ./",
+    "pretest": "npm run compile",
+    "prepublish": "npm run compile"
+  },
+  "author": "ElrondNetwork",
+  "license": "ISC",
+  "dependencies": {
+    "level": "^6.0.1",
+    "protobufjs": "^6.10.1"
+  },
+  "devDependencies": {
+    "@types/assert": "^1.4.6",
+    "@types/chai": "^4.2.11",
+    "@types/levelup": "^4.3.0",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.2",
+    "@types/protobufjs": "^6.0.0",
+    "@types/underscore": "^1.9.4",
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "ts-node": "^8.8.2",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  }
+}
