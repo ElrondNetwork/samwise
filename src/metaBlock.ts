@@ -6,6 +6,7 @@ export class MetaBlock {
     epoch: number = 0;
     round: number = 0;
     notarizedBlocks: ShardData[] = [];
+    miniblockHeaders: MiniblockHeader[] = [];
 
     constructor() {
     }
@@ -19,12 +20,15 @@ export class MetaBlock {
         result.round = object.Round;
         result.epoch = object.Epoch;
         result.notarizedBlocks = object.ShardInfo.map((item: any) => ShardData.fromProtoObject(item));
+        result.miniblockHeaders = object.MiniBlockHeaders.map((item: any) => MiniblockHeader.fromProtoObject(item));
 
         return result;
     }
 
     containsMiniblock(hash: string): boolean {
-        return this.notarizedBlocks.some(item => item.containsMiniblock(hash));
+        let inNotarizedBlocks = this.notarizedBlocks.some(item => item.containsMiniblock(hash));
+        let inMiniblockHeaders = this.miniblockHeaders.some(item => item.hash == hash);
+        return inNotarizedBlocks || inMiniblockHeaders;
     }
 }
 
