@@ -48,11 +48,15 @@ export class EpochDatabase {
         await this.rewardsDb.close();
     }
 
-    async getMiniblockMetadata(hash: string): Promise<MiniblockMetadata> {
-        let buffer = await this.miniblocksMetadataDb.get(hash);
-        let result = MiniblockMetadata.fromBuffer(buffer);
-        result.hash = hash;
-        return result;
+    async getMiniblockMetadata(hash: string): Promise<MiniblockMetadata | null> {
+        try {
+            let buffer = await this.miniblocksMetadataDb.get(hash);
+            let result = MiniblockMetadata.fromBuffer(buffer);
+            result.hash = hash;
+            return result;
+        } catch (error) {
+            return onLevelErrorGet(error);
+        }
     }
 
     async getAnyTxHashes(): Promise<string[]> {
@@ -103,6 +107,10 @@ export class EpochDatabase {
 
     async getRewardsHashes(): Promise<string[]> {
         return await this.getKeys(this.rewardsDb);
+    }
+
+    async getMiniblocksHashes(): Promise<string[]> {
+        return await this.getKeys(this.miniblocksMetadataDb);
     }
 
     private async getKeys(db: any): Promise<string[]> {

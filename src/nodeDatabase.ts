@@ -35,35 +35,30 @@ export class NodeDatabase {
         await this.epochByHashIndex.open();
         await this.miniblockByTxHashIndex.open();
 
-        if (!this.epochByHashIndex.isOpen()) {
-            throw new Error("stop");
-        }
-
-        if (!this.miniblockByTxHashIndex.isOpen()) {
-            throw new Error("stop");
-        }
-
-
         let epochFolders = readdirSync(dbpath, { withFileTypes: true }).filter((item: any) => item.isDirectory() && item.name != "Static");
         
         epochFolders.forEach((item: any) => {
             let nameParts = item.name.split("_");
             let epoch = Number(nameParts[1]);
             let epochDbPath = path.join(dbpath, item.name);
-
             this.epochDatabases[epoch] = new EpochDatabase(epoch, epochDbPath, this.shard);
         });
         
-        for (const db of this.epochDatabases) {
+        for (const db of this.getEpochDatabases()) {
             await db.open();
         }
+    }
+
+    private getEpochDatabases(): EpochDatabase[] {
+        // Skip missing epochs
+        return this.epochDatabases.filter(e => e);
     }
 
     async close() {
         await this.epochByHashIndex.close();
         await this.miniblockByTxHashIndex.close();
 
-        for (const db of this.epochDatabases) {
+        for (const db of this.getEpochDatabases()) {
             await db.close();
         }
     }
@@ -80,10 +75,32 @@ export class NodeDatabase {
         return result;
     }
 
+    async getLookupMiniblocksHashes(): Promise<string[]> {
+        let result: string[] = [];
+        
+        for (const db of this.getEpochDatabases()) {
+            let hashes = await db.getMiniblocksHashes();
+            Array.prototype.push.apply(result, hashes);
+        }
+
+        return result;
+    }
+
+    async getMiniblockMetadata(hash: string) {
+        for (const db of this.getEpochDatabases()) {
+            let tx = await db.getMiniblockMetadata(hash);
+            if (tx) {
+                return tx;
+            }
+        }
+
+        return null;
+    }
+
     async getCoreTxHashes(): Promise<string[]> {
         let result: string[] = [];
         
-        for (const db of this.epochDatabases) {
+        for (const db of this.getEpochDatabases()) {
             let hashes = await db.getAnyTxHashes();
             Array.prototype.push.apply(result, hashes);
         }
@@ -92,7 +109,7 @@ export class NodeDatabase {
     }
 
     async getAnyTx(hash: string): Promise<any> {
-        for (const db of this.epochDatabases) {
+        for (const db of this.getEpochDatabases()) {
             let tx = await db.getAnyTx(hash);
             if (tx) {
                 return tx;
@@ -115,7 +132,7 @@ export class NodeDatabase {
     }
 
     async getMetaBlock(hash: string): Promise<MetaBlock | null> {
-        for (const db of this.epochDatabases) {
+        for (const db of this.getEpochDatabases()) {
             if (db.containsMetaBlock(hash)) {
                 return await db.getMetaBlock(hash);
             }
