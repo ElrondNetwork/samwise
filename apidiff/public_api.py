@@ -1,5 +1,7 @@
+import base64
 import difflib
 import logging
+import shutil
 from argparse import ArgumentParser
 from pathlib import Path
 from typing import Any
@@ -8,8 +10,8 @@ from apidiff import samples, shared
 
 
 class Context:
-    def __init__(self, data_folder, api_url_a, api_url_b) -> None:
-        self.data_folder = Path(data_folder)
+    def __init__(self, workspace, api_url_a, api_url_b) -> None:
+        self.workspace = Path(workspace)
         self.api_url_b = api_url_b
         self.api_url_a = api_url_a
 
@@ -20,12 +22,12 @@ def main():
     parser = ArgumentParser()
     parser.add_argument("--a", default="https://api.elrond.com")
     parser.add_argument("--b", default="https://staging-api.elrond.com")
-    parser.add_argument("--data-folder", required=True)
+    parser.add_argument("--workspace", required=True)
     args = parser.parse_args()
 
-    context = Context(args.data_folder, args.a, args.b)
+    context = Context(args.workspace, args.a, args.b)
 
-    shared.ensure_folder(context.data_folder)
+    shared.ensure_folder(context.workspace)
 
     do_diff(context, "network/config", "network", "GET_network_config")
     do_diff(context, "network/status/4294967295", "network", "GET_network_metachain_status")
@@ -47,8 +49,8 @@ def main():
 
 
 def do_diff(context: Context, url, group, tag):
-    shared.ensure_folder(context.data_folder / "a" / group)
-    shared.ensure_folder(context.data_folder / "b" / group)
+    shared.ensure_folder(context.workspace / "a" / group)
+    shared.ensure_folder(context.workspace / "b" / group)
 
     if not tag:
         tag = url.replace("/", "_").replace("?", "_Q_").replace("=", "_eq_")
@@ -59,8 +61,8 @@ def do_diff(context: Context, url, group, tag):
     a = _post_process_reponse(a, url)
     b = _post_process_reponse(b, url)
 
-    a_json_file = context.data_folder / "a" / group / f"{tag}.json"
-    b_json_file = context.data_folder / "b" / group / f"{tag}.json"
+    a_json_file = context.workspace / "a" / group / f"{tag}.json"
+    b_json_file = context.workspace / "b" / group / f"{tag}.json"
     shared.write_json_file(a_json_file, a)
     shared.write_json_file(b_json_file, b)
 
@@ -75,11 +77,10 @@ def do_diff(context: Context, url, group, tag):
     differ = difflib.Differ()
     diff = differ.compare(a_lines, b_lines)
     diff_content = "".join(diff)
-    shared.write_file(context.data_folder / f"{tag}.diff.txt", diff_content)
+    shared.write_file(context.workspace / f"{tag}.diff.txt", diff_content)
 
 
 # Post process the response - ignore some fields etc, ignore ordering, remove identification info.
-# TODO: Refactor, extract duplication.
 def _post_process_reponse(response, url) -> Any:
     if isinstance(response, dict):
         response = [response]
@@ -87,45 +88,46 @@ def _post_process_reponse(response, url) -> Any:
     if "blocks" in url:
         for block in response:
             del block["validators"]
-            if len(str(block["proposer"])) > 4:
-                block["proposer"] = str(block["proposer"])[:4] + "..."
         # Also ignore ordering of blocks in response
         response = sorted(response, key=lambda item: item["hash"])
 
     if "transactions" in url:
         for transaction in response:
-            transaction["txHash"] = str(transaction["txHash"])[:4] + "..."
-            transaction["miniBlockHash"] = str(transaction["txHash"])[:4] + "..."
-            if "signature" in transaction:
-                transaction["signature"] = str(transaction["signature"])[:4] + "..."
-            if "data" in transaction:
-                transaction["data"] = str(transaction["data"])[:4] + "..."
-            transaction["receiver"] = "erd1..." if "erd1" in transaction["receiver"] else transaction["receiver"]
-            transaction["sender"] = "erd1..." if "erd1" in transaction["sender"] else transaction["sender"]
-
-            # Also ignore ordering of sc results
+            # Ignore ordering of sc results
             if "scResults" in transaction:
                 transaction["scResults"] = sorted(transaction["scResults"], key=lambda item: f"{item['nonce']}{item.get('value')}")
 
-                for result in transaction["scResults"]:
-                    result["receiver"] = "erd1..." if "erd1" in result["receiver"] else result["receiver"]
-                    result["sender"] = "erd1..." if "erd1" in result["sender"] else result["sender"]
-
-                    if "prevTxHash" in result:
-                        result["prevTxHash"] = str(result["prevTxHash"])[:4] + "..."
-                    if "originalTxHash" in result:
-                        result["originalTxHash"] = str(result["originalTxHash"])[:4] + "..."
-                    if "data" in result:
-                        result["data"] = str(result["data"])[:4] + "..."
-                    if "hash" in result:
-                        result["hash"] = str(result["hash"])[:4] + "..."
-
-    if "address" in url:
-        for address in response:
-            address["data"]["account"]["address"] = "erd1..."
-            address["data"]["account"]["code"] = "..."
+    for item in response:
+        shared.mutate_struct_recursively(item, hide_data)
 
     return response
+
+
+def hide_data(key: str, value: Any) -> Any:
+    str_value = str(value)
+
+    print("hide data", key, str_value[:16])
+
+    # Hide addresses
+    if str_value.startswith("erd1"):
+        return "erd1..."
+
+    # Truncate hashes
+    if len(str_value) in [64, 128, 192]:
+        try:
+            int(str_value, 16)
+            return str_value[:4] + "..."
+        except ValueError:
+            pass
+
+    # Truncate base64-data
+    try:
+        base64.b64decode(str_value)
+        return str_value[:4] + "..."
+    except ValueError:
+        pass
+
+    return value
 
 
 if __name__ == "__main__":

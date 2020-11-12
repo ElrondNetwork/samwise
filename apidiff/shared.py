@@ -2,7 +2,7 @@ import json
 import pathlib
 from os import PathLike
 from pathlib import Path
-from typing import Any, Union
+from typing import Any, Callable, Union
 
 import requests
 
@@ -74,3 +74,26 @@ def write_file(filename: PathLike, text: str):
 
 def ensure_folder(folder: Union[str, Path]):
     pathlib.Path(folder).mkdir(parents=True, exist_ok=True)
+
+
+def mutate_struct_recursively(data, mutate_item: Callable[[str, Any], Any]):
+    for (key, value) in list(iterate_over(data)):
+        if is_iterable(value):
+            mutate_struct_recursively(value, mutate_item)
+        else:
+            data[key] = mutate_item(key, value)
+
+
+def is_iterable(data) -> bool:
+    return isinstance(data, dict) or isinstance(data, list)
+
+
+def iterate_over(data):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            yield (key, value)
+    elif isinstance(data, list):
+        for index, value in enumerate(data):
+            yield (index, value)
+    else:
+        raise KnownError("Unknown data structure, expected dict or list.")
