@@ -75,6 +75,15 @@ export class NodeDatabase {
         return result;
     }
 
+    async onLookupTxHash(callback: (hash: string) => Promise<void>): Promise<void> {
+        let stream = this.miniblockByTxHashIndex.createReadStream({ keys: true, values: false });
+
+        for await (const data of stream) {
+            let hash: any = data;
+            await callback(hash);
+        }
+    }
+
     async getLookupMiniblocksHashes(): Promise<string[]> {
         let result: string[] = [];
         

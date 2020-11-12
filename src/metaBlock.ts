@@ -16,6 +16,16 @@ export class MetaBlock {
         let message: any = MetaBlockMessage.decode(buffer);
         let object = MetaBlockMessage.toObject(message, ProtoToObjectOptions);
 
+        // let economics = object.EpochStart.Economics;
+        // console.log(economics);
+        // console.log("TotalSupply:", economics.TotalSupply.toString("hex"));
+        // console.log("TotalToDistribute:", economics.TotalToDistribute.toString("hex"));
+        // console.log("TotalNewlyMinted:", economics.TotalNewlyMinted.toString("hex"));
+        // console.log("RewardsPerBlock:", economics.RewardsPerBlock.toString("hex"));
+        // console.log("RewardsForProtocolSustainability:", economics.RewardsForProtocolSustainability.toString("hex"));
+        // console.log("NodePrice:", economics.NodePrice.toString("hex"));
+     
+
         result.nonce = object.Nonce;
         result.round = object.Round;
         result.epoch = object.Epoch;
