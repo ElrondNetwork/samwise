@@ -24,6 +24,11 @@ source ./apidiff/profiles/env.sh
 python3 ./apidiff/public_api.py --workspace=./workspaces/mydiff --profile=./apidiff/profiles/v0_vs_v1.json
 ```
 
+For a git-like diff:
+```
+git diff --color-words --no-index ./workspaces/mydiff/v0 ./workspaces/mydiff/v1 | ./apidiff/ansi2html.sh > ./workspaces/mydiff/gitdiff.html
+```
+
 ### Diffs for Gateway API (Elrond Proxy API)
 
 ```
