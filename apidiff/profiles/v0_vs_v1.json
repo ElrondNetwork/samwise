@@ -1,0 +1,332 @@
+[
+    {
+        "tag": "v0",
+        "url": "${{A}}",
+        "endpoints": [
+            {
+                "group": "network",
+                "get": "network/config",
+                "response": "GET_network_config.json"
+            },
+            {
+                "group": "network",
+                "get": "network/status/4294967295",
+                "response": "GET_network_metachain_status.json"
+            },
+            {
+                "group": "address",
+                "get": "address/${{F_DELEGATION_ADDRESS}}",
+                "response": "GET_account_by_address.json"
+            },
+            {
+                "group": "blocks",
+                "get": "blocks?nonce=42",
+                "response": "GET_blocks_by_nonce.json",
+                "normalize": {
+                    "ignore": [
+                        "[each].validators"
+                    ],
+                    "sort": [
+                        {
+                            "what": "[self]",
+                            "by": [
+                                "shardId",
+                                "nonce"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "blocks",
+                "get": "blocks/${{E_BLOCK}}",
+                "response": "GET_blocks_by_hash.json",
+                "normalize": {
+                    "ignore": [
+                        "validators"
+                    ]
+                }
+            },
+            {
+                "group": "blocks",
+                "get": "blocks",
+                "response": "GET_blocks_top.json",
+                "normalize": {
+                    "ignore": [
+                        "[each].validators"
+                    ],
+                    "sort": [
+                        {
+                            "what": "[self]",
+                            "by": [
+                                "shardId",
+                                "nonce"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{A_SUCCESSFUL_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_successful.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{B_INVALID_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_invalid.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{C_FAILED_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_failed.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{D_REWARDS_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_rewards.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions?miniBlockHash=${{G_MINIBLOCK_SUCCESSFUL}}",
+                "response": "GET_transactions_by_miniblock_successful.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "[each].scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions?miniBlockHash=${{H_MINIBLOCK_FAILED}}",
+                "response": "GET_transactions_by_miniblock_failed.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "[each].scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "tag": "v1",
+        "url": "${{B}}",
+        "endpoints": [
+            {
+                "group": "network",
+                "get": "network/config",
+                "response": "GET_network_config.json"
+            },
+            {
+                "group": "network",
+                "get": "network/status/4294967295",
+                "response": "GET_network_metachain_status.json"
+            },
+            {
+                "group": "address",
+                "get": "address/${{F_DELEGATION_ADDRESS}}",
+                "response": "GET_account_by_address.json"
+            },
+            {
+                "group": "blocks",
+                "get": "blocks?nonce=42",
+                "response": "GET_blocks_by_nonce.json",
+                "normalize": {
+                    "ignore": [
+                        "[each].validators"
+                    ],
+                    "sort": [
+                        {
+                            "what": "[self]",
+                            "by": [
+                                "shard",
+                                "nonce"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "blocks",
+                "get": "blocks/${{E_BLOCK}}",
+                "response": "GET_blocks_by_hash.json",
+                "normalize": {
+                    "ignore": [
+                        "validators"
+                    ]
+                }
+            },
+            {
+                "group": "blocks",
+                "get": "blocks",
+                "response": "GET_blocks_top.json",
+                "normalize": {
+                    "ignore": [
+                        "[each].validators"
+                    ],
+                    "sort": [
+                        {
+                            "what": "[self]",
+                            "by": [
+                                "shard",
+                                "nonce"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{A_SUCCESSFUL_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_successful.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{B_INVALID_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_invalid.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{C_FAILED_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_failed.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions/${{D_REWARDS_TRANSACTION}}",
+                "response": "GET_transactions_by_hash_rewards.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions?miniBlockHash=${{G_MINIBLOCK_SUCCESSFUL}}",
+                "response": "GET_transactions_by_miniblock_successful.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "[each].scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "transactions",
+                "get": "transactions?miniBlockHash=${{H_MINIBLOCK_FAILED}}",
+                "response": "GET_transactions_by_miniblock_failed.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "[each].scResults",
+                            "by": [
+                                "nonce",
+                                "value"
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]

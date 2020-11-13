@@ -1,104 +1,159 @@
 import base64
 import difflib
+import json
 import logging
-import shutil
+import os
+import re
 from argparse import ArgumentParser
 from pathlib import Path
 from typing import Any
 
-from apidiff import samples, shared
+from apidiff import shared
+from apidiff.shared import parse_path_segments
+
+
+class Profile:
+    def __init__(self, versions: list):
+        self.versions = [Version(item) for item in versions]
+
+
+class Version:
+    def __init__(self, d: dict):
+        self.tag = ""
+        self.url = ""
+        self.endpoints = []
+        self.__dict__.update(d)
+        self.endpoints = [Endpoint(item) for item in self.endpoints]
+
+
+class Endpoint:
+    def __init__(self, d: dict):
+        self.group = ""
+        self.get = ""
+        self.response = ""
+        self.normalize = None
+        self.__dict__.update(d)
+        self.normalize = NormalizeDef(self.normalize)
+
+
+class NormalizeDef:
+    def __init__(self, d: dict):
+        self.ignore = []
+        self.sort = []
+
+        if d is None:
+            return
+
+        self.__dict__.update(d)
+        self.ignore = [shared.parse_path_segments(item) for item in self.ignore]
+        self.sort = [SortDef(item) for item in self.sort]
+
+
+class SortDef:
+    def __init__(self, d: dict):
+        self.what = ""
+        self.by = []
+        self.__dict__.update(d)
+        self.what = parse_path_segments(self.what)
 
 
 class Context:
-    def __init__(self, workspace, api_url_a, api_url_b) -> None:
+    def __init__(self, workspace, profile: Profile) -> None:
         self.workspace = Path(workspace)
-        self.api_url_b = api_url_b
-        self.api_url_a = api_url_a
+        self.profile = profile
 
 
 def main():
     logging.basicConfig(level=logging.INFO)
 
     parser = ArgumentParser()
-    parser.add_argument("--a", default="https://api.elrond.com")
-    parser.add_argument("--b", default="https://staging-api.elrond.com")
+    parser.add_argument("--profile", required=True)
     parser.add_argument("--workspace", required=True)
     args = parser.parse_args()
 
-    context = Context(args.workspace, args.a, args.b)
+    profile = load_profile(args.profile)
+    context = Context(args.workspace, profile)
 
-    shared.ensure_folder(context.workspace)
-
-    do_diff(context, "network/config", "network", "GET_network_config")
-    do_diff(context, "network/status/4294967295", "network", "GET_network_metachain_status")
-    do_diff(context, f"address/{samples.F_DELEGATION_ADDRESS}", "address", "GET_account_by_address")
-    do_diff(context, "blocks?nonce=42", "blocks", "GET_blocks_by_nonce")
-    do_diff(context, f"blocks/{samples.E_BLOCK}", "blocks", "GET_blocks_by_hash")
-    do_diff(context, "blocks", "blocks", "GET_blocks_top")
-    do_diff(context, f"transactions/{samples.A_SUCCESSFUL_TRANSACTION}", "transactions", "GET_transactions_by_hash_successful")
-    do_diff(context, f"transactions/{samples.B_INVALID_TRANSACTION}", "transactions", "GET_transactions_by_hash_invalid")
-    do_diff(context, f"transactions/{samples.C_FAILED_TRANSACTION}", "transactions", "GET_transactions_by_hash_failed")
-    do_diff(context, f"transactions/{samples.D_REWARDS_TRANSACTION}", "transactions", "GET_transactions_by_hash_rewards")
-    do_diff(context, f"transactions?miniBlockHash={samples.G_MINIBLOCK_SUCCESSFUL}", "transactions", "GET_transactions_by_miniblock_successful")
-    do_diff(context, f"transactions?miniBlockHash={samples.H_MINIBLOCK_FAILED}", "transactions", "GET_transactions_by_miniblock_failed")
-
-    # do_diff(context, f"transaction/{samples.A_SUCCESSFUL_TRANSACTION}", "transaction", "GET_transaction_by_hash_successful")
-    # do_diff(context, f"transaction/{samples.B_INVALID_TRANSACTION}", "transaction", "GET_transaction_by_hash_invalid")
-    # do_diff(context, f"transaction/{samples.C_FAILED_TRANSACTION}", "transaction", "GET_transaction_by_hash_failed")
-    # do_diff(context, f"transaction/{samples.D_REWARDS_TRANSACTION}", "transaction", "GET_transaction_by_hash_rewards")
+    do_requests(context)
+    do_simple_diff(context)
 
 
-def do_diff(context: Context, url, group, tag):
-    shared.ensure_folder(context.workspace / "a" / group)
-    shared.ensure_folder(context.workspace / "b" / group)
+def do_requests(context: Context):
+    for version in context.profile.versions:
+        tag = version.tag
+        url = version.url
+        endpoints = version.endpoints
 
-    if not tag:
-        tag = url.replace("/", "_").replace("?", "_Q_").replace("=", "_eq_")
+        for endpoint in endpoints:
+            print("GET", f"{url}/{endpoint.get}")
+            response = shared.do_get(f"{url}/{endpoint.get}")
+            response = normalize_response(response, endpoint.normalize)
 
-    a = shared.do_get(f"{context.api_url_a}/{url}")
-    b = shared.do_get(f"{context.api_url_b}/{url}")
+            folder = context.workspace / tag / endpoint.group
+            shared.ensure_folder(folder)
+            json_file = folder / endpoint.response
+            shared.write_json_file(json_file, response)
 
-    a = _post_process_reponse(a, url)
-    b = _post_process_reponse(b, url)
 
-    a_json_file = context.workspace / "a" / group / f"{tag}.json"
-    b_json_file = context.workspace / "b" / group / f"{tag}.json"
-    shared.write_json_file(a_json_file, a)
-    shared.write_json_file(b_json_file, b)
+def load_profile(file: str):
+    content = shared.read_file(file)
+    content = replace_placeholders(content)
+    data = json.loads(content)
+    profile = Profile(data)
+    return profile
 
-    a_lines = shared.read_lines(a_json_file)
-    b_lines = shared.read_lines(b_json_file)
 
-    if a_lines == b_lines:
-        return
+def replace_placeholders(input: str):
+    pattern = re.compile("\\${{(.*?)}}")
+    matches = re.findall(pattern, input)
 
-    print(f"Diff detected on: {tag}")
+    for variable in matches:
+        value = os.environ.get(variable, "")
+        if not value:
+            raise shared.KnownError(f"Missing variable: {variable}")
+        input = input.replace(f"${{{{{variable}}}}}", value)
 
-    differ = difflib.Differ()
-    diff = differ.compare(a_lines, b_lines)
-    diff_content = "".join(diff)
-    shared.write_file(context.workspace / f"{tag}.diff.txt", diff_content)
+    return input
+
+
+def do_simple_diff(context: Context):
+    if len(context.profile.versions) != 2:
+        raise shared.KnownError("Can only diff between 2 versions.")
+
+    version_a = context.profile.versions[0]
+    version_b = context.profile.versions[1]
+
+    if len(version_a.endpoints) != len(version_b.endpoints):
+        raise shared.KnownError("Simple diff not applicable")
+
+    for endpoint in version_a.endpoints:
+        print(f"Check diff for: {endpoint.group} / {endpoint.response}")
+        json_file_a = context.workspace / version_a.tag / endpoint.group / endpoint.response
+        json_file_b = context.workspace / version_b.tag / endpoint.group / endpoint.response
+
+        lines_a = shared.read_lines(json_file_a)
+        lines_b = shared.read_lines(json_file_b)
+
+        if lines_a == lines_b:
+            continue
+
+        print(f"Diff detected on: {endpoint.group} / {endpoint.response}")
+
+        differ = difflib.Differ()
+        diff = differ.compare(lines_a, lines_b)
+        diff_content = "".join(diff)
+        shared.write_file(context.workspace / f"{endpoint.response}.diff.txt", diff_content)
 
 
 # Post process the response - ignore some fields etc, ignore ordering, remove identification info.
-def _post_process_reponse(response, url) -> Any:
-    if isinstance(response, dict):
-        response = [response]
+def normalize_response(response, normalize: NormalizeDef) -> Any:
+    for ignoreable_path in normalize.ignore:
+        shared.delete_in_struct(response, ignoreable_path)
 
-    if "blocks" in url:
-        for block in response:
-            del block["validators"]
-        # Also ignore ordering of blocks in response
-        response = sorted(response, key=lambda item: item["hash"])
+    for sort in normalize.sort:
+        shared.sort_in_struct(response, sort.what, sort.by)
 
-    if "transactions" in url:
-        for transaction in response:
-            # Ignore ordering of sc results
-            if "scResults" in transaction:
-                transaction["scResults"] = sorted(transaction["scResults"], key=lambda item: f"{item['nonce']}{item.get('value')}")
-
-    for item in response:
-        shared.mutate_struct_recursively(item, hide_data)
+    shared.mutate_struct_recursively(response, hide_data)
 
     return response
 
@@ -106,7 +161,9 @@ def _post_process_reponse(response, url) -> Any:
 def hide_data(key: str, value: Any) -> Any:
     str_value = str(value)
 
-    print("hide data", key, str_value[:16])
+    # Truncate large data (e.g. contract code)
+    if len(str_value) > 256:
+        return str_value[:4] + "..."
 
     # Hide addresses
     if str_value.startswith("erd1"):

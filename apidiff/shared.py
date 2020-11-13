@@ -2,7 +2,7 @@ import json
 import pathlib
 from os import PathLike
 from pathlib import Path
-from typing import Any, Callable, Union
+from typing import Any, Callable, List, Union
 
 import requests
 
@@ -53,7 +53,7 @@ class ApiRequestError(KnownError):
 
 def write_json_file(filename: PathLike, data: Any):
     with open(str(filename), "w") as f:
-        json.dump(data, f, indent=4)
+        json.dump(data, f, indent=4, sort_keys=True)
 
 
 def read_lines(filename: PathLike, strip=False):
@@ -65,6 +65,11 @@ def read_lines(filename: PathLike, strip=False):
         lines = [line for line in lines if line]
 
     return lines
+
+
+def read_file(f: PathLike) -> str:
+    with open(f, "r") as f:
+        return f.read()
 
 
 def write_file(filename: PathLike, text: str):
@@ -97,3 +102,43 @@ def iterate_over(data):
             yield (index, value)
     else:
         raise KnownError("Unknown data structure, expected dict or list.")
+
+
+def delete_in_struct(struct, path_segments):
+    index_last_segment = len(path_segments) - 1
+
+    for index, segment in enumerate(path_segments):
+        if index == index_last_segment:
+            del struct[segment]
+            return
+        if segment == "[each]":
+            for each in struct:
+                delete_in_struct(each, path_segments[index + 1:])
+            return
+        else:
+            struct = struct.get(segment)
+
+
+def sort_in_struct(struct, what_segments, by_fields):
+    if what_segments == ["[self]"]:
+        struct.sort(key=lambda item: ",".join([str(item[field]) for field in by_fields]))
+        return
+
+    index_last_segment = len(what_segments) - 1
+
+    for index, segment in enumerate(what_segments):
+        if index == index_last_segment:
+            if segment in struct:
+                struct[segment] = sorted(struct[segment], key=lambda item: ",".join([str(item[field]) for field in by_fields]))
+            return
+        if segment == "[each]":
+            for each in struct:
+                sort_in_struct(each, what_segments[index + 1:], by_fields)
+            return
+        else:
+            struct = struct.get(segment)
+
+
+def parse_path_segments(compound_path: str):
+    segments = compound_path.split(".")
+    return segments

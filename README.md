@@ -20,7 +20,8 @@ npx ts-node ./src/analysis/check_hyperblock_links.ts --workspace=~/elrond-nodes 
 
 ```
 export PYTHONPATH=.
-python3 ./apidiff/public_api.py --workspace=./workspaces/mydiff --a=https://api.elrond.com --b=https://staging-api.elrond.com
+source ./apidiff/profiles/env.sh
+python3 ./apidiff/public_api.py --workspace=./workspaces/mydiff --profile=./apidiff/profiles/v0_vs_v1.json
 ```
 
 ### Diffs for Gateway API (Elrond Proxy API)
