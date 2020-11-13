@@ -16,21 +16,22 @@ npx ts-node ./src/analysis/check_hyperblock_links.ts --workspace=~/elrond-nodes 
 
 ## API diff-ing
 
-### Diffs for API Facade (Elrond Public API)
 
 ```
 export PYTHONPATH=.
 source ./apidiff/profiles/env.sh
-python3 ./apidiff/public_api.py --workspace=./workspaces/mydiff --profile=./apidiff/profiles/v0_vs_v1.json
 ```
 
-For a git-like diff:
+### Diffs for API Facade (Elrond Public API)
+
 ```
-git diff --color-words --no-index ./workspaces/mydiff/v0 ./workspaces/mydiff/v1 | ./apidiff/ansi2html.sh > ./workspaces/mydiff/gitdiff.html
+python3 ./apidiff/public_api.py --workspace=./workspaces/v0-to-v1 --profile=./apidiff/profiles/v0-to-v1.json
+git diff --color-words --no-index ./workspaces/v0-to-v1/v0 ./workspaces/v0-to-v1/v1 | ./apidiff/ansi2html.sh > ./workspaces/v0-to-v1/gitdiff.html
 ```
 
 ### Diffs for Gateway API (Elrond Proxy API)
 
 ```
-...
+python3 ./apidiff/public_api.py --workspace=./workspaces/v1.1.0-to-v1.1.3 --profile=./apidiff/profiles/v1.1.0-to-v1.1.3.json
+git diff --color-words --no-index ./workspaces/v1.1.0-to-v1.1.3/v1.1.0 ./workspaces/v1.1.0-to-v1.1.3/v1.1.3 | ./apidiff/ansi2html.sh > ./workspaces/v1.1.0-to-v1.1.3/gitdiff.html
 ```

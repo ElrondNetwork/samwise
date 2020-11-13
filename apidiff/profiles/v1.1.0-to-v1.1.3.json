@@ -1,0 +1,74 @@
+[
+    {
+        "tag": "v1.1.0",
+        "url": "${{PROXY_A}}",
+        "endpoints": [
+            {
+                "group": "network",
+                "get": "network/config",
+                "response": "GET_network_config.json"
+            },
+            {
+                "group": "network",
+                "get": "network/status/4294967295",
+                "response": "GET_network_metachain_status.json"
+            },
+            {
+                "group": "address",
+                "get": "address/${{F_DELEGATION_ADDRESS}}",
+                "response": "GET_account_by_address.json"
+            },
+            {
+                "group": "transaction",
+                "get": "transaction/${{SUCCESSFUL_TRANSACTION_RECENT}}",
+                "response": "GET_transaction_by_hash_successful.json"
+            },
+            {
+                "group": "transaction",
+                "get": "transaction/${{FAILED_TRANSACTION_RECENT}}",
+                "response": "GET_transaction_by_hash_failed.json"
+            },
+            {
+                "group": "transaction",
+                "get": "transaction/${{REWARDS_TRANSACTION_RECENT}}",
+                "response": "GET_transaction_by_hash_rewards.json"
+            }
+        ]
+    },
+    {
+        "tag": "v1.1.3",
+        "url": "${{PROXY_B}}",
+        "endpoints": [
+            {
+                "group": "network",
+                "get": "network/config",
+                "response": "GET_network_config.json"
+            },
+            {
+                "group": "network",
+                "get": "network/status/4294967295",
+                "response": "GET_network_metachain_status.json"
+            },
+            {
+                "group": "address",
+                "get": "address/${{F_DELEGATION_ADDRESS}}",
+                "response": "GET_account_by_address.json"
+            },
+            {
+                "group": "transaction",
+                "get": "transaction/${{SUCCESSFUL_TRANSACTION_RECENT}}",
+                "response": "GET_transaction_by_hash_successful.json"
+            },
+            {
+                "group": "transaction",
+                "get": "transaction/${{FAILED_TRANSACTION_RECENT}}",
+                "response": "GET_transaction_by_hash_failed.json"
+            },
+            {
+                "group": "transaction",
+                "get": "transaction/${{REWARDS_TRANSACTION_RECENT}}",
+                "response": "GET_transaction_by_hash_rewards.json"
+            }
+        ]
+    }
+]
