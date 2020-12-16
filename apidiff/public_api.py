@@ -30,6 +30,8 @@ class Endpoint:
     def __init__(self, d: dict):
         self.group = ""
         self.get = ""
+        self.post = ""
+        self.data = None
         self.response = ""
         self.normalize = None
         self.__dict__.update(d)
@@ -85,8 +87,13 @@ def do_requests(context: Context):
         endpoints = version.endpoints
 
         for endpoint in endpoints:
-            print("GET", f"{url}/{endpoint.get}")
-            response = shared.do_get(f"{url}/{endpoint.get}")
+            if endpoint.get:
+                print("GET", f"{url}/{endpoint.get}")
+                response = shared.do_get(f"{url}/{endpoint.get}")
+            else:
+                print("POST", f"{url}/{endpoint.post}")
+                response = shared.do_post(f"{url}/{endpoint.post}", endpoint.data)
+
             response = normalize_response(response, endpoint.normalize)
 
             folder = context.workspace / tag / endpoint.group

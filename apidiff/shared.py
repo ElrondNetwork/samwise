@@ -2,7 +2,7 @@ import json
 import pathlib
 from os import PathLike
 from pathlib import Path
-from typing import Any, Callable, List, Union
+from typing import Any, Callable, Union
 
 import requests
 

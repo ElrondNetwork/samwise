@@ -187,6 +187,26 @@
                         }
                     ]
                 }
+            },
+            {
+                "group": "vm",
+                "post": "vm-values/query",
+                "data": {
+                    "ScAddress": "${{DELEGATION_ADDRESS}}",
+                    "FuncName": "getNumUsers",
+                    "Args": []
+                },
+                "response": "POST_vm_delegation_getNumUsers.json"
+            },
+            {
+                "group": "vm",
+                "post": "vm-values/query",
+                "data": {
+                    "ScAddress": "${{DELEGATION_ADDRESS}}",
+                    "FuncName": "getClaimableRewards",
+                    "Args": ["${{USER_ADDRESS_HEX}}"]
+                },
+                "response": "POST_vm_delegation_getClaimableRewards.json"
             }
         ]
     },
@@ -378,6 +398,26 @@
                         }
                     ]
                 }
+            },
+            {
+                "group": "vm",
+                "post": "vm-values/query",
+                "data": {
+                    "ScAddress": "${{DELEGATION_ADDRESS}}",
+                    "FuncName": "getNumUsers",
+                    "Args": []
+                },
+                "response": "POST_vm_delegation_getNumUsers.json"
+            },
+            {
+                "group": "vm",
+                "post": "vm-values/query",
+                "data": {
+                    "ScAddress": "${{DELEGATION_ADDRESS}}",
+                    "FuncName": "getClaimableRewards",
+                    "Args": ["${{USER_ADDRESS_HEX}}"]
+                },
+                "response": "POST_vm_delegation_getClaimableRewards.json"
             }
         ]
     }
