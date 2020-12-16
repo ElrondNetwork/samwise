@@ -25,13 +25,21 @@ source ./apidiff/profiles/env.sh
 ### Diffs for API Facade (Elrond Public API)
 
 ```
-python3 ./apidiff/public_api.py --workspace=./workspaces/v0-to-v1 --profile=./apidiff/profiles/v0-to-v1.json
-git diff --color-words --no-index ./workspaces/v0-to-v1/v0 ./workspaces/v0-to-v1/v1 | ./apidiff/ansi2html.sh > ./workspaces/v0-to-v1/gitdiff.html
+export FROM_V=v1
+export TO_V=v2
+export FROM_TO=${FROM_V}-to-${TO_V}
+
+python3 ./apidiff/public_api.py --workspace=./workspaces/${FROM_TO} --profile=./apidiff/profiles/${FROM_TO}.json
+git diff --color-words --no-index ./workspaces/${FROM_TO}/${FROM_V} ./workspaces/${FROM_TO}/${TO_V} | ./apidiff/ansi2html.sh > ./workspaces/${FROM_TO}/gitdiff.html
 ```
 
 ### Diffs for Gateway API (Elrond Proxy API)
 
 ```
-python3 ./apidiff/public_api.py --workspace=./workspaces/v1.1.4-to-v1.1.5 --profile=./apidiff/profiles/v1.1.4-to-v1.1.5.json
-git diff --color-words --no-index ./workspaces/v1.1.4-to-v1.1.5/v1.1.4 ./workspaces/v1.1.4-to-v1.1.5/v1.1.5 | ./apidiff/ansi2html.sh > ./workspaces/v1.1.4-to-v1.1.5/gitdiff.html
+export FROM_V=v1.1.4
+export TO_V=v1.1.5
+export FROM_TO=${FROM_V}-to-${TO_V}
+
+python3 ./apidiff/public_api.py --workspace=./workspaces/${FROM_TO} --profile=./apidiff/profiles/${FROM_TO}.json
+git diff --color-words --no-index ./workspaces/${FROM_TO}/${FROM_V} ./workspaces/${FROM_TO}/${TO_V} | ./apidiff/ansi2html.sh > ./workspaces/${FROM_TO}/gitdiff.html
 ```
