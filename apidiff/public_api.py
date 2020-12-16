@@ -178,13 +178,14 @@ def hide_data(key: str, value: Any) -> Any:
             pass
 
     # Truncate base64-data
-    try:
-        decoded = base64.b64decode(str_value)
-        re_encoded = base64.b64encode(decoded).decode()
-        if re_encoded == str_value:
-            return str_value[:4] + "..."
-    except ValueError:
-        pass
+    if "=" in str_value or "/" in str_value:
+        try:
+            decoded = base64.b64decode(str_value)
+            re_encoded = base64.b64encode(decoded).decode()
+            if re_encoded == str_value:
+                return str_value[:4] + "..."
+        except ValueError:
+            pass
 
     return value
 
