@@ -19,6 +19,11 @@
                 "response": "GET_account_by_address.json"
             },
             {
+                "group": "address",
+                "get": "address/${{USER_ADDRESS}}/transactions",
+                "response": "GET_transactions_by_address.json"
+            },
+            {
                 "group": "transaction",
                 "get": "transaction/${{SUCCESSFUL_TRANSACTION_RECENT}}",
                 "response": "GET_transaction_by_hash_successful.json"
@@ -53,6 +58,11 @@
                 "group": "address",
                 "get": "address/${{F_DELEGATION_ADDRESS}}",
                 "response": "GET_account_by_address.json"
+            },
+            {
+                "group": "address",
+                "get": "address/${{USER_ADDRESS}}/transactions",
+                "response": "GET_transactions_by_address.json"
             },
             {
                 "group": "transaction",
