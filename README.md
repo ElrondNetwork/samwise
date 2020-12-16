@@ -32,6 +32,6 @@ git diff --color-words --no-index ./workspaces/v0-to-v1/v0 ./workspaces/v0-to-v1
 ### Diffs for Gateway API (Elrond Proxy API)
 
 ```
-python3 ./apidiff/public_api.py --workspace=./workspaces/v1.1.0-to-v1.1.3 --profile=./apidiff/profiles/v1.1.0-to-v1.1.3.json
-git diff --color-words --no-index ./workspaces/v1.1.0-to-v1.1.3/v1.1.0 ./workspaces/v1.1.0-to-v1.1.3/v1.1.3 | ./apidiff/ansi2html.sh > ./workspaces/v1.1.0-to-v1.1.3/gitdiff.html
+python3 ./apidiff/public_api.py --workspace=./workspaces/v1.1.4-to-v1.1.5 --profile=./apidiff/profiles/v1.1.4-to-v1.1.5.json
+git diff --color-words --no-index ./workspaces/v1.1.4-to-v1.1.5/v1.1.4 ./workspaces/v1.1.4-to-v1.1.5/v1.1.5 | ./apidiff/ansi2html.sh > ./workspaces/v1.1.4-to-v1.1.5/gitdiff.html
 ```
