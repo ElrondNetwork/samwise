@@ -37,6 +37,156 @@
                 "group": "transaction",
                 "get": "transaction/${{REWARDS_TRANSACTION_RECENT}}",
                 "response": "GET_transaction_by_hash_rewards.json"
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{A_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_A.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{A_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_A.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{B_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_B.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{B_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_B.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{C_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_C.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{C_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_C.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{D_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_D.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{D_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_D.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{E_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_E.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{E_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_E.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
             }
         ]
     },
@@ -78,6 +228,156 @@
                 "group": "transaction",
                 "get": "transaction/${{REWARDS_TRANSACTION_RECENT}}",
                 "response": "GET_transaction_by_hash_rewards.json"
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{A_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_A.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{A_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_A.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{B_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_B.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{B_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_B.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{C_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_C.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{C_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_C.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{D_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_D.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{D_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_D.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-nonce/${{E_HYPERBLOCK_NONCE}}",
+                "response": "GET_hyperblock_by_nonce_E.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "group": "hyperblock",
+                "get": "hyperblock/by-hash/${{E_HYPERBLOCK_HASH}}",
+                "response": "GET_hyperblock_by_hash_E.json",
+                "normalize": {
+                    "sort": [
+                        {
+                            "what": "data.hyperblock.transactions",
+                            "by": [
+                                "hash"
+                            ]
+                        }
+                    ]
+                }
             }
         ]
     }
