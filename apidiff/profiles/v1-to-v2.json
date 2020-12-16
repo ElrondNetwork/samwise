@@ -48,25 +48,6 @@
                 }
             },
             {
-                "group": "blocks",
-                "get": "blocks",
-                "response": "GET_blocks_top.json",
-                "normalize": {
-                    "ignore": [
-                        "[each].validators"
-                    ],
-                    "sort": [
-                        {
-                            "what": "[self]",
-                            "by": [
-                                "shard",
-                                "nonce"
-                            ]
-                        }
-                    ]
-                }
-            },
-            {
                 "group": "transactions",
                 "get": "transactions/${{A_SUCCESSFUL_TRANSACTION}}",
                 "response": "GET_transactions_by_hash_successful.json",
@@ -161,6 +142,25 @@
                         }
                     ]
                 }
+            },
+            {
+                "group": "blocks",
+                "get": "blocks",
+                "response": "GET_blocks_top.json",
+                "normalize": {
+                    "ignore": [
+                        "[each].validators"
+                    ],
+                    "sort": [
+                        {
+                            "what": "[self]",
+                            "by": [
+                                "shard",
+                                "nonce"
+                            ]
+                        }
+                    ]
+                }
             }
         ]
     },
@@ -168,6 +168,25 @@
         "tag": "v2",
         "url": "${{B}}",
         "endpoints": [
+            {
+                "group": "blocks",
+                "get": "blocks",
+                "response": "GET_blocks_top.json",
+                "normalize": {
+                    "ignore": [
+                        "[each].validators"
+                    ],
+                    "sort": [
+                        {
+                            "what": "[self]",
+                            "by": [
+                                "shard",
+                                "nonce"
+                            ]
+                        }
+                    ]
+                }
+            },
             {
                 "group": "network",
                 "get": "network/config",
@@ -209,25 +228,6 @@
                 "normalize": {
                     "ignore": [
                         "validators"
-                    ]
-                }
-            },
-            {
-                "group": "blocks",
-                "get": "blocks",
-                "response": "GET_blocks_top.json",
-                "normalize": {
-                    "ignore": [
-                        "[each].validators"
-                    ],
-                    "sort": [
-                        {
-                            "what": "[self]",
-                            "by": [
-                                "shard",
-                                "nonce"
-                            ]
-                        }
                     ]
                 }
             },
